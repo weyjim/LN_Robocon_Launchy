@@ -483,14 +483,19 @@ void HWalk2(void)
 	ZuoBiao_contrary=0;//是否倒车 1倒车 0前进
 	Zhua_Stop=0; //是否停车 0 不停 1停车 抓取
 	Zhuan=0;//是否停车 1停 0不停 稳定体态的
-//	Zou=1;//速度=-30 是否减速 1为减速 0为加速
+	Zou=1;//速度=-30 是否减速 1为减速 0为加速
 	TWO_DIAN_PD(0,250);
-	TWO_DIAN_PD(-660,2030);//y+30
-	Zhuan=1;
+	TWO_DIAN_PD(-650,2030);//y+30
+	//Zhuan=1;
 	Zou=1;
-  TWO_DIAN_PD(-660,4080);
+  TWO_DIAN_PD(-699,3700);
+	Zou=1;
+	TWO_DIAN_PD(-699,3900);
+	TWO_DIAN_PD(-729,4350);
+	TWO_DIAN_PD(-739,4400);
+	Zou=1;
 	Zhuan=1;
-	//Zhua_Stop=1;
+	Zhua_Stop=1;
 
 }
 void HWalkBack2(void)
