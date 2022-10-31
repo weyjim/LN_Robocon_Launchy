@@ -50,6 +50,7 @@ int main(void)
     while(1)
 	   {
 			 HWalk2();
+		//	 HWalk1();
 //			 TWO_DIAN_PD(0,250);
 //			 	
 //			TWO_DIAN_PD(-200,250);

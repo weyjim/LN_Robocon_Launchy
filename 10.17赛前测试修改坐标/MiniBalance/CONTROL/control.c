@@ -435,7 +435,19 @@ int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y)
 
 
 
+void wey_walk(void)
+{
+	ZuoBiao_contrary=0;
+	Zhua_Stop=0;
+	Zhuan=0;
+	Zou=1;//速度=-30
+	//TWO_DIAN_PD(0,500);
+	TWO_DIAN_PD(-335,2040);//y+30
+	Zhuan=1;
+	TWO_DIAN_PD(-335,2800);
+	Zhua_Stop=1;
 
+}	
 
 
 
@@ -447,12 +459,12 @@ void HWalk1(void)
 	ZuoBiao_contrary=0; //是否倒车 1倒车 0前进
 	Zhua_Stop=0; //是否停车 0 不停 1停车 抓取
 	Zhuan=0; //是否停车 1停 0不停
-	Zou=1;//速度=-30 zuo=1 为左转 zuo=0 为右转 
+//	Zou=1;//速度=-30 zuo=1 为左转 zuo=0 为右转 
 //	TWO_DIAN_PD(0,500);
-	TWO_DIAN_PD(-50,2300);
-	Zhuan=1;
-//	TWO_DIAN_PD(-50,4800);
-//	Zhua_Stop=1;// 
+		TWO_DIAN_PD(-690,4070);
+		Zou=1;
+   Zhuan=1;
+	Zhua_Stop=1;// 
 }
 void HWalkBack1(void)
 {
@@ -473,10 +485,10 @@ void HWalk2(void)
 	Zhuan=0;//是否停车 1停 0不停 稳定体态的
 //	Zou=1;//速度=-30 是否减速 1为减速 0为加速
 	TWO_DIAN_PD(0,250);
-	TWO_DIAN_PD(-670,2030);//y+30
+	TWO_DIAN_PD(-660,2030);//y+30
 	Zhuan=1;
 	Zou=1;
-  TWO_DIAN_PD(-670,4000);
+  TWO_DIAN_PD(-660,4080);
 	Zhuan=1;
 	//Zhua_Stop=1;
 

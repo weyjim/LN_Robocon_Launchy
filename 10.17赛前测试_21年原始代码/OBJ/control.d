@@ -3,7 +3,7 @@
 ..\obj\control.o: ..\SYSTEM\sys\sys.h
 ..\obj\control.o: ..\USER\stm32f10x.h
 ..\obj\control.o: ..\MiniBalance_COER\core_cm3.h
-..\obj\control.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\control.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\control.o: ..\USER\system_stm32f10x.h
 ..\obj\control.o: ..\USER\stm32f10x_conf.h
 ..\obj\control.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -35,7 +35,7 @@
 ..\obj\control.o: ..\MiniBalance_HARDWARE\KEY\key.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\OLED\oled.h
 ..\obj\control.o: ..\SYSTEM\usart\usart.h
-..\obj\control.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\control.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\USART3\usart3.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\TIMER\timer.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\MOTOR\motor.h
@@ -49,7 +49,7 @@
 ..\obj\control.o: ..\MiniBalance_HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\DMP\dmpKey.h
 ..\obj\control.o: ..\MiniBalance_HARDWARE\DMP\dmpmap.h
-..\obj\control.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\string.h
-..\obj\control.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\control.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\math.h
+..\obj\control.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\control.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\control.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\control.o: ..\MiniBalance\filter\filter.h
