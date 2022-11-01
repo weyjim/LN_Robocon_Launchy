@@ -46,6 +46,6 @@
 "..\obj\show.o"
 "..\obj\filter.o"
 --strict --scatter "..\OBJ\MiniBalance.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\MiniBalance.map" -o ..\OBJ\MiniBalance.axf

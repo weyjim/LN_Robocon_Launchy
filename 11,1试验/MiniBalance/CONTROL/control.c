@@ -460,10 +460,12 @@ void HWalk1(void)
 	Zhua_Stop=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
-//	TWO_DIAN_PD(0,500);
-	TWO_DIAN_PD(-50,4080);
+	TWO_DIAN_PD(0,500);
+	TWO_DIAN_PD(-650,2030);			//刹车要求720
+	TWO_DIAN_PD(-699,3700);
+	//TWO_DIAN_PD(-729,4600);
 	Zhuan=1;
-	TWO_DIAN_PD(-50,4800);
+	TWO_DIAN_PD(-729,4350);
 	Zhua_Stop=1;
 }
 void HWalkBack1(void)
@@ -473,9 +475,9 @@ void HWalkBack1(void)
 	Zhua_Stop=0;
 	Zhuan=0;
 	Zou=0;//速度=30
-	TWO_DIAN_PD(335,-3170);
+	TWO_DIAN_PD(729,-4000);			//335 3170
 	Zhuan=1;
-	TWO_DIAN_PD(335,-2370);
+	TWO_DIAN_PD(729,-3400);			//335 2370
 	Zhua_Stop=1;
 }
 

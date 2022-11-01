@@ -23,6 +23,8 @@ float Acceleration_Z;                       //Z轴加速度计
 float Balance_Kp=420,Balance_Kd=0.7416,Velocity_Kp=-10,Velocity_Ki=0.75;//PID参数     700  1.45   1.42
 u16 PID_Parameter[10],Flash_Parameter[10];  //Flash相关数组
 
+
+
 int main(void)
   {
 		delay_init();	    	            //=====延时函数初始化
@@ -51,7 +53,8 @@ int main(void)
 		}
     while(1)
 	   {
-		   wey_walk();
+		   HWalk1();
+		   HWalkBack1();
 		   while(1);
 			if(Hong==0)
 			{
