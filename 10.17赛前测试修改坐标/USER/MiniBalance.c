@@ -49,7 +49,9 @@ int main(void)
 		} 
     while(1)
 	   {
-			 HWalk2();
+//			 HWalk2();
+//			 delay_ms(2000);
+HWalkBack2();
 		//	 HWalk1();
 //			 TWO_DIAN_PD(0,250);
 //			 	

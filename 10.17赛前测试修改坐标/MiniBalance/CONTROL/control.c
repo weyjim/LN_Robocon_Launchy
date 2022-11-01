@@ -489,7 +489,6 @@ void HWalk2(void)
 	//Zhuan=1;
 	Zou=1;
   TWO_DIAN_PD(-699,3700);
-	Zou=1;
 	TWO_DIAN_PD(-699,3900);
 	TWO_DIAN_PD(-729,4350);
 	TWO_DIAN_PD(-739,4400);
@@ -504,10 +503,12 @@ void HWalkBack2(void)
 	ZuoBiao_contrary=1;
 	Zhua_Stop=0;
 	Zhuan=0;
-	Zou=0;//速度=30
-	TWO_DIAN_PD(335,-3170);
+//	Zou=0;//速度=30
+	TWO_DIAN_PD(0,-4000);
+	Zou=1;
+	TWO_DIAN_PD(0,-4100);
+	Zou=1;
 	Zhuan=1;
-	TWO_DIAN_PD(335,-2370);
 	Zhua_Stop=1;
 }
 void HWalk3(void)
