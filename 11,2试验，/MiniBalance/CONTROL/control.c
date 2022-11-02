@@ -317,10 +317,11 @@ int myabs(int a)
 //P                 参数P
 //D                 参数D
 /*********************到点的子函数***************************************/
-int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y)
+int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y,float speed)
 {
 	int static TWO_DIAN_PD;
 	//if(Zhuan)Sudu=0;else if(Zou==1) Sudu=-30;else Sudu=30;
+	Sudu=-speed;
 	while(1)
 	{
 //		if(KEY==0) break;

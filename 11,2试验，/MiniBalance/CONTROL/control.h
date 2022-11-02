@@ -13,7 +13,7 @@ int EXTI15_10_IRQHandler(void);
 int balance(float angle,float gyro);
 int velocity(int encoder_left,int encoder_right,int sudu);
 int turn(int encoder_left,int encoder_right,float gyro);
-int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y);
+int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y,float speed);
 void Set_Pwm(int moto1,int moto2);
 void Key(void);
 void Xianfu_Pwm(void);
