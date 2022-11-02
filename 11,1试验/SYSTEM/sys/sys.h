@@ -89,7 +89,7 @@ extern u8 Way_Angle,Stop,Zou,ZuoBiao_contrary;                                  
 extern int Encoder_Left,Encoder_Right,Sudu,Zhuan;                     //左右编码器的脉冲计数
 extern int Moto1,Moto2;                                     //电机PWM变量 应是motor的 向moto致敬	
 extern u8 Flag_Qian,Flag_Hou,Flag_Left,Flag_Right,Flag_sudu,delay_50; //蓝牙遥控相关的变量
-extern u8 Flag_Stop,Flag_Show,Zhua_Stop;                               //停止标志位和 显示标志位 默认停止 显示打开 
+extern u8 Flag_Stop,Flag_Show,Motor_Stay;                               //停止标志位和 显示标志位 默认停止 显示打开 
 extern int Voltage,Voltage_Zheng,Voltage_Xiao;                //电池电压采样相关的变量
 extern float Roll,Angle_Balance,Gyro_Balance,Gyro_Turn;           //平衡倾角 平衡陀螺仪 转向陀螺仪
 extern u32 Distance;                                           //超声波测距

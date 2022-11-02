@@ -11,7 +11,7 @@ QQ: 1611860702
 /*定义了t,t1**/
 u8 Way_Angle=1,Stop=1,Zou=1,ZuoBiao_contrary=0;                             //获取角度的算法，1：四元数  2：卡尔曼  3：互补滤波 
 u8 Flag_Qian,Flag_Hou,Flag_Left,Flag_Right,Flag_sudu=2; //蓝牙遥控相关的变量
-u8 Flag_Stop=1,Flag_Show=0,Zhua_Stop=0;                 //停止标志位和 显示标志位 默认停止 显示打开 //Flag_Stop置1关闭电机
+u8 Flag_Stop=1,Flag_Show=0,Motor_Stay=0;                 //停止标志位和 显示标志位 默认停止 显示打开 //Flag_Stop置1关闭电机
 int Encoder_Left,Encoder_Right,Sudu,t,Zhuan=0;             //左右编码器的脉冲计数
 int Moto1,Moto2;                            //电机PWM变量 应是Motor的 向Moto致敬
 int Temperature;                            //显示温度

@@ -61,7 +61,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x61617CA7)
-F (.\MiniBalance.c)(0x6360F152)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\minibalance.o --omf_browse ..\obj\minibalance.crf --depend ..\obj\minibalance.d)
+F (.\MiniBalance.c)(0x6360F8F1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\minibalance.o --omf_browse ..\obj\minibalance.crf --depend ..\obj\minibalance.d)
 I (stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -91,7 +91,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x61617CA7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\SYSTEM\delay\delay.h)(0x61617CA7)
 I (..\MiniBalance_HARDWARE\KEY\key.h)(0x61617CC7)
 I (..\MiniBalance_HARDWARE\OLED\oled.h)(0x61617CC7)
@@ -786,7 +786,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x61617CA7)
 F (..\SYSTEM\delay\delay.c)(0x61617CA7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYSTEM\delay\delay.h)(0x61617CA7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -836,7 +836,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\SYSTEM\sys\sys.c)(0x61617CA7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -887,7 +887,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\SYSTEM\usart\usart.c)(0x61617CA7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -939,7 +939,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\KEY\key.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
 I (..\MiniBalance_HARDWARE\KEY\key.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -990,7 +990,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\OLED\oled.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\oled.o --omf_browse ..\obj\oled.crf --depend ..\obj\oled.d)
 I (..\MiniBalance_HARDWARE\OLED\oled.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1042,7 +1042,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\MiniBalance_HARDWARE\OLED\oledfont.h)(0x61617CC7)
 F (..\MiniBalance_HARDWARE\TIMER\timer.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
 I (..\MiniBalance_HARDWARE\TIMER\timer.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1093,7 +1093,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\MOTOR\motor.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
 I (..\MiniBalance_HARDWARE\MOTOR\motor.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1144,7 +1144,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\ENCODER\encoder.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
 I (..\MiniBalance_HARDWARE\ENCODER\encoder.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1223,7 +1223,7 @@ I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x61617CA7)
 I (..\STM32F10x_FWLib\inc\misc.h)(0x61617CA7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\SYSTEM\delay\delay.h)(0x61617CA7)
 I (..\MiniBalance_HARDWARE\KEY\key.h)(0x61617CC7)
 I (..\MiniBalance_HARDWARE\OLED\oled.h)(0x61617CC7)
@@ -1245,7 +1245,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\USART3\usart3.c)(0x6165BF0D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart3.o --omf_browse ..\obj\usart3.crf --depend ..\obj\usart3.d)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1298,7 +1298,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdarg.h)(0x60252376)
 F (..\MiniBalance_HARDWARE\EXTI\exti.c)(0x6161B0AF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\exti.o --omf_browse ..\obj\exti.crf --depend ..\obj\exti.d)
 I (..\MiniBalance_HARDWARE\EXTI\exti.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1349,7 +1349,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance_HARDWARE\TONGXIN\tongxin.c)(0x61683B1C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\tongxin.o --omf_browse ..\obj\tongxin.crf --depend ..\obj\tongxin.d)
 I (..\MiniBalance_HARDWARE\TONGXIN\tongxin.h)(0x616825E0)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1398,9 +1398,9 @@ I (..\MiniBalance_HARDWARE\DMP\dmpmap.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
-F (..\MiniBalance\CONTROL\control.c)(0x6360F475)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
+F (..\MiniBalance\CONTROL\control.c)(0x6360F8F1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --omf_browse ..\obj\control.crf --depend ..\obj\control.d)
 I (..\MiniBalance\CONTROL\control.h)(0x635E474F)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1452,7 +1452,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\MiniBalance\filter\filter.h)(0x61617CC7)
 F (..\MiniBalance\DMP\inv_mpu.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\inv_mpu.o --omf_browse ..\obj\inv_mpu.crf --depend ..\obj\inv_mpu.d)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1503,7 +1503,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\string.h)(0x6025237E)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance\DMP\inv_mpu_dmp_motion_driver.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\inv_mpu_dmp_motion_driver.o --omf_browse ..\obj\inv_mpu_dmp_motion_driver.crf --depend ..\obj\inv_mpu_dmp_motion_driver.d)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1555,7 +1555,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance\MPU6050\MPU6050.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\mpu6050.o --omf_browse ..\obj\mpu6050.crf --depend ..\obj\mpu6050.d)
 I (..\MiniBalance\MPU6050\MPU6050.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1607,7 +1607,7 @@ I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\math.h)(0x60252378)
 F (..\MiniBalance\show\show.c)(0x61617CC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\MiniBalance_COER -I ..\STM32F10x_FWLib\inc -I ..\MiniBalance_HARDWARE -I ..\SYSTEM -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MiniBalance_HARDWARE\DMP -I ..\MiniBalance_HARDWARE\IIC -I ..\MiniBalance_HARDWARE\MPU6050 -I ..\MiniBalance_HARDWARE\ENCODER -I ..\MiniBalance_HARDWARE\OLED -I ..\MiniBalance\show -I ..\MiniBalance_HARDWARE\LED -I ..\MiniBalance_HARDWARE\KEY -I ..\MiniBalance_HARDWARE\ADC -I ..\MiniBalance_HARDWARE\MOTOR -I ..\MiniBalance_HARDWARE\TIMER -I ..\MiniBalance_HARDWARE\USART3 -I ..\MiniBalance_HARDWARE\EXTI -I ..\MiniBalance_HARDWARE\DataScope_DP -I ..\MiniBalance\filter -I ..\MiniBalance_HARDWARE\STMFLASH -I ..\MiniBalance\CONTROL -I ..\MiniBalance_HARDWARE\TONGXIN-I.\RTE\_MiniBalance-ID:\Tec\MDK5\Pack\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Tec\MDK5\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DSTM32F10X_ -DHD -DUSE_STDPERIPH_DRIVER-o ..\obj\show.o --omf_browse ..\obj\show.crf --depend ..\obj\show.d)
 I (..\MiniBalance\show\show.h)(0x61617CC7)
-I (..\SYSTEM\sys\sys.h)(0x6165BEC7)
+I (..\SYSTEM\sys\sys.h)(0x6360F8F1)
 I (..\USER\stm32f10x.h)(0x61617CA7)
 I (..\MiniBalance_COER\core_cm3.h)(0x61617CC7)
 I (D:\Tec\MDK5\Core\ARM\ARMCC\include\stdint.h)(0x6025237E)

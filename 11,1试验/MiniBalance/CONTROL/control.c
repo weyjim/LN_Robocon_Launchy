@@ -231,7 +231,7 @@ void Key(void)
 u8 Turn_Off(float angle)
 {
 	    u8 temp;
-			if(angle<-40||angle>40||1==Flag_Stop||Zhua_Stop==1)//电池电压低于11.1V关闭电机
+			if(angle<-40||angle>40||1==Flag_Stop||Motor_Stay==1)//电池电压低于11.1V关闭电机
 			{	                                                 //===倾角大于40度关闭电机
       temp=1;                                            //===Flag_Stop置1关闭电机
 			AIN1=0;                                            
@@ -311,9 +311,12 @@ int myabs(int a)
 int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y)
 {
 	int static TWO_DIAN_PD;
-	if(Zhuan)Sudu=0;
-	else if(Zou==1) Sudu=-30;
-	else Sudu=30;
+	if(Zhuan)
+		Sudu=0;
+	else if(Zou==1) 
+		Sudu=-30;
+	else 
+		Sudu=30;
 	while(1)
 	{
 //		if(KEY==0) break;
@@ -441,14 +444,14 @@ int TWO_DIAN_PD(float SetSpeed_x,float SetSpeed_y)
 void wey_walk(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(0,500);
 	TWO_DIAN_PD(-335,2040);//y+30
 	Zhuan=1;
 	TWO_DIAN_PD(-335,2800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }	
 
@@ -457,250 +460,249 @@ void wey_walk(void)
 void HWalk1(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(0,500);
 	TWO_DIAN_PD(-650,2030);			//刹车要求720
 	TWO_DIAN_PD(-699,3700);
-	//TWO_DIAN_PD(-729,4600);
 	Zhuan=1;
 	TWO_DIAN_PD(-729,4350);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void HWalkBack1(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(729,-4000);			//335 3170
 	Zhuan=1;
 	TWO_DIAN_PD(729,-3400);			//335 2370
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 
 void HWalk2(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(0,500);
 	TWO_DIAN_PD(-335,4040);//y+30
 	Zhuan=1;
 	TWO_DIAN_PD(-335,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void HWalkBack2(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(335,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(335,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void HWalk3(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(-710,4120);
 	Zhuan=1;
 	TWO_DIAN_PD(-710,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void HWalkBack3(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(710,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(710,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void HWalk4(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(-1085,4120);
 	Zhuan=1;
 	TWO_DIAN_PD(-1085,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void HWalkBack4(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(1085,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(1085,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void HWalk5(void)//最后y轴-20
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(-1430,4080);
 	Zhuan=1;
 	TWO_DIAN_PD(-1430,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void HWalkBack5(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(710,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(710,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 /*************************************************************************************/
 /************************************蓝场*********************************************/
 void LWalk1(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 //	TWO_DIAN_PD(100,500);
 	TWO_DIAN_PD(20,4050);
 	Zhuan=1;
 	TWO_DIAN_PD(20,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void LWalkBack1(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(-340,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(-340,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void LWalk2(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(0,500);
 	TWO_DIAN_PD(340,4050);//Y+30
 	Zhuan=1;
 	TWO_DIAN_PD(340,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void LWalkBack2(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(-340,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(-340,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void LWalk3(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(715,4100);
 	Zhuan=1;
 	TWO_DIAN_PD(715,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void LWalkBack3(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(-715,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(-715,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void LWalk4(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(1090,4080);
 	Zhuan=1;
 	TWO_DIAN_PD(1090,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void LWalkBack4(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(-1090,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(-1090,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 void LWalk5(void)
 {
 	ZuoBiao_contrary=0;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=1;//速度=-30
 	TWO_DIAN_PD(1400,4120);
 	Zhuan=1;
 	TWO_DIAN_PD(1400,4800);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 
 }
 void LWalkBack5(void)
 {
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
-	Zhua_Stop=0;
+	Motor_Stay=0;
 	Zhuan=0;
 	Zou=0;//速度=30
 	TWO_DIAN_PD(-715,-3170);
 	Zhuan=1;
 	TWO_DIAN_PD(-715,-2370);
-	Zhua_Stop=1;
+	Motor_Stay=1;
 }
 /**************************************************/
 
