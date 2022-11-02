@@ -24,10 +24,10 @@ void HWalkBack1(void)
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
 	TWO_DIAN_PD(740,-4000,-30);			//335 3170
-	TWO_DIAN_PD(740,-700,-30);			//335 2370
-	TWO_DIAN_PD(740,-400,0);			//335 2370
-	
-	Motor_Stay=0;
+	TWO_DIAN_PD(740,-3750,-20);			//335 2370
+	TWO_DIAN_PD(740,-3250,-5);			//335 2370
+		Motor_Stay=1;
+	delay_ms(500);
 }
 
 //void HWalk2(void)
