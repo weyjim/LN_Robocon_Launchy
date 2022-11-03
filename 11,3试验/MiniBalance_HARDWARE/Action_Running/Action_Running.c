@@ -11,7 +11,7 @@ void HWalk1(void)
 	
 	TWO_DIAN_PD(0,400,30);
 	TWO_DIAN_PD(-400,1000,30);			//停车要求720
-	TWO_DIAN_PD(-610,1500,30);			//停车要求720
+	TWO_DIAN_PD(-618,1550,30);			//停车要求720
 	TWO_DIAN_PD(-730,3700,30);
 	
 	TWO_DIAN_PD(-740,4250,5);
@@ -23,9 +23,9 @@ void HWalkBack1(void)
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
-	TWO_DIAN_PD(740,-4000,-30);			//335 3170
-	TWO_DIAN_PD(740,-3750,-20);			//335 2370
-	TWO_DIAN_PD(740,-3250,-5);			//335 2370
+	TWO_DIAN_PD(740,-500,-30);			//335 3170
+//	TWO_DIAN_PD(740,-3750,-20);			//335 2370
+//	TWO_DIAN_PD(740,-3250,-10);			//335 2370
 		Motor_Stay=1;
 	delay_ms(500);
 }
