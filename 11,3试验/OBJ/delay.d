@@ -3,7 +3,7 @@
 ..\obj\delay.o: ..\SYSTEM\sys\sys.h
 ..\obj\delay.o: ..\USER\stm32f10x.h
 ..\obj\delay.o: ..\MiniBalance_COER\core_cm3.h
-..\obj\delay.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\delay.o: ..\USER\system_stm32f10x.h
 ..\obj\delay.o: ..\USER\stm32f10x_conf.h
 ..\obj\delay.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -35,7 +35,7 @@
 ..\obj\delay.o: ..\SYSTEM\sys\sys.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\OLED\oled.h
 ..\obj\delay.o: ..\SYSTEM\usart\usart.h
-..\obj\delay.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\USART3\usart3.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\TIMER\timer.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\MOTOR\motor.h
@@ -49,6 +49,6 @@
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\DMP\dmpKey.h
 ..\obj\delay.o: ..\MiniBalance_HARDWARE\DMP\dmpmap.h
-..\obj\delay.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\string.h
-..\obj\delay.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\delay.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\math.h
+..\obj\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\delay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

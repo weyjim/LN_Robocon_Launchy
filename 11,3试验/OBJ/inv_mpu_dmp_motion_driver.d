@@ -2,7 +2,7 @@
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\SYSTEM\sys\sys.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\USER\stm32f10x.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_COER\core_cm3.h
-..\obj\inv_mpu_dmp_motion_driver.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\inv_mpu_dmp_motion_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\USER\system_stm32f10x.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\USER\stm32f10x_conf.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -34,7 +34,7 @@
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\KEY\key.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\OLED\oled.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\SYSTEM\usart\usart.h
-..\obj\inv_mpu_dmp_motion_driver.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\inv_mpu_dmp_motion_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\USART3\usart3.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\TIMER\timer.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\MOTOR\motor.h
@@ -48,6 +48,6 @@
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\DMP\inv_mpu_dmp_motion_driver.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\DMP\dmpKey.h
 ..\obj\inv_mpu_dmp_motion_driver.o: ..\MiniBalance_HARDWARE\DMP\dmpmap.h
-..\obj\inv_mpu_dmp_motion_driver.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\string.h
-..\obj\inv_mpu_dmp_motion_driver.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\inv_mpu_dmp_motion_driver.o: D:\Tec\MDK5\Core\ARM\ARMCC\Bin\..\include\math.h
+..\obj\inv_mpu_dmp_motion_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\inv_mpu_dmp_motion_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\inv_mpu_dmp_motion_driver.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
