@@ -14,7 +14,7 @@ void HWalk1(void)
 	TWO_DIAN_PD(-618,1550,30);			//停车要求720
 	TWO_DIAN_PD(-730,3700,30);
 	
-	TWO_DIAN_PD(-740,4250,5);
+	TWO_DIAN_PD(-740,4350,5);
 	Motor_Stay=1;
 	delay_ms(500);
 }
@@ -23,13 +23,94 @@ void HWalkBack1(void)
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
-	TWO_DIAN_PD(740,-500,-30);			//335 3170
-//	TWO_DIAN_PD(740,-3750,-20);			//335 2370
-//	TWO_DIAN_PD(740,-3250,-10);			//335 2370
+	TWO_DIAN_PD(740,-4000,-30);			//335 3170
+	TWO_DIAN_PD(740,-3750,-20);			//335 2370
+	TWO_DIAN_PD(740,-3350,-10);			//335 2370
 		Motor_Stay=1;
 	delay_ms(500);
 }
-
+void HWalk2(void)
+{
+ ZuoBiao_contrary=0;
+ Motor_Stay=0;
+ 
+ TWO_DIAN_PD(-740,3350,20);
+ TWO_DIAN_PD(-540,3750,15);   //停车要求720
+ TWO_DIAN_PD(-420,4150,10);
+ TWO_DIAN_PD(-420,4310,0);
+ Motor_Stay=1;
+ delay_ms(500);
+}
+void HWalkBack2(void)
+{
+	SendGetF10=0;
+	ZuoBiao_contrary=1;
+	Motor_Stay=0;
+	TWO_DIAN_PD(420,-4000,-30);			//335 3170
+	TWO_DIAN_PD(420,-3750,-20);			//335 2370
+	TWO_DIAN_PD(420,-3350,-10);			//335 2370
+		Motor_Stay=1;
+	delay_ms(500);
+}
+void HWalk3(void)
+{
+ ZuoBiao_contrary=0;
+ Motor_Stay=0;
+ 
+ TWO_DIAN_PD(-420,3350,20);
+ TWO_DIAN_PD(-220,3750,15);   //停车要求720
+ TWO_DIAN_PD(-70,4150,15);
+ TWO_DIAN_PD(-70,4350,0);
+ Motor_Stay=1;
+ delay_ms(500);
+}
+void HWalkBack3(void)
+{
+	SendGetF10=0;
+	ZuoBiao_contrary=1;
+	Motor_Stay=0;
+	TWO_DIAN_PD(70,-4000,-20);			//335 3170
+	TWO_DIAN_PD(70,-3750,-10);			//335 2370
+	TWO_DIAN_PD(100,-3000,-10);			//335 2370
+		Motor_Stay=1;
+	delay_ms(500);
+}
+void HWalk4(void)
+{
+ ZuoBiao_contrary=0;
+ Motor_Stay=0;
+ 
+ TWO_DIAN_PD(-100,3000,30);
+ TWO_DIAN_PD(-840,3250,15);   //停车要求720
+ TWO_DIAN_PD(-1040,3950,20); 
+ TWO_DIAN_PD(-1110,4150,15);
+ TWO_DIAN_PD(-1110,4350,0);
+ Motor_Stay=1;
+ delay_ms(500);
+}
+void HWalkBack4(void)
+{
+	SendGetF10=0;
+	ZuoBiao_contrary=1;
+	Motor_Stay=0;
+	TWO_DIAN_PD(1110,-4000,-30);			//335 3170
+	TWO_DIAN_PD(1110,-3750,-20);			//335 2370
+	TWO_DIAN_PD(1110,-3350,-10);			//335 2370
+		Motor_Stay=1;
+	delay_ms(500);
+}
+void HWalk5(void)
+{
+ ZuoBiao_contrary=0;
+ Motor_Stay=0;
+ 
+ TWO_DIAN_PD(-1110,3350,30);
+ TWO_DIAN_PD(-1310,3750,20);   //停车要求720
+ TWO_DIAN_PD(-1460,4150,15);
+ TWO_DIAN_PD(-1460,4350,0);
+ Motor_Stay=1;
+ delay_ms(500);
+}
 //void HWalk2(void)
 //{
 //	ZuoBiao_contrary=0;//是否倒车 1倒车 0前进

@@ -38,8 +38,16 @@ int main(void)
 	}
     while(1)
 	{
-		HWalk1();
-		HWalkBack1();
+		HWalk1(); //取中间球
+		HWalkBack1();//取中间球倒车
+		HWalk2();//取右侧第一个球
+		HWalkBack2();//取右侧第一个球倒车
+		HWalk3();//取右侧第二个球
+		HWalkBack3();//取右侧第二个球倒车
+		HWalk4();//取左侧第一个球
+		HWalkBack4();//取左侧第一个球倒车
+		HWalk5();//取左侧第二个球
+		
 		while(1);
 	}
 	
