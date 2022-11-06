@@ -31,7 +31,9 @@ void MAIN_Init(void);
 int main(void)
 {
 	MAIN_Init();
-	  	 
+	GPIO_SetBits(GPIOA,GPIO_Pin_8); 
+	HWalk1();
+	while(1);
 	while(pos_x==0&&pos_y==0)	//等待定位轮初始化
 	{
 		printf("Wait \r\n");
