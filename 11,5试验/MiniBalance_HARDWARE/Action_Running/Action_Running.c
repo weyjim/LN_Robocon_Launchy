@@ -11,10 +11,10 @@ void HWalk1(void)
 	
 	TWO_DIAN_PD(0,400,30);
 	TWO_DIAN_PD(-400,1000,30);			//停车要求720
-	TWO_DIAN_PD(-618,1550,30);			//停车要求720
+	TWO_DIAN_PD(-638,1550,30);			//停车要求720
 	TWO_DIAN_PD(-730,3700,30);
-	
-	TWO_DIAN_PD(-740,4350,5);
+	TWO_DIAN_PD(-780,3900,30);
+	TWO_DIAN_PD(-780,4300,10);
 	Motor_Stay=1;
 	delay_ms(500);
 }
@@ -23,9 +23,9 @@ void HWalkBack1(void)
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
-	TWO_DIAN_PD(740,-4000,-30);			//335 3170
-	TWO_DIAN_PD(740,-3750,-20);			//335 2370
-	TWO_DIAN_PD(740,-3350,-10);			//335 2370
+	TWO_DIAN_PD(780,-4000,-30);			//335 3170
+	TWO_DIAN_PD(780,-3750,-20);			//335 2370
+	TWO_DIAN_PD(780,-3350,-10);			//335 2370
 		Motor_Stay=1;
 	delay_ms(500);
 }
@@ -34,10 +34,10 @@ void HWalk2(void)
  ZuoBiao_contrary=0;
  Motor_Stay=0;
  
- TWO_DIAN_PD(-740,3350,20);
- TWO_DIAN_PD(-540,3750,15);   //停车要求720
- TWO_DIAN_PD(-420,4150,10);
- TWO_DIAN_PD(-420,4310,0);
+ TWO_DIAN_PD(-780,3350,20);
+ TWO_DIAN_PD(-570,3750,15);   //停车要求720
+ TWO_DIAN_PD(-490,3950,10);
+ TWO_DIAN_PD(-490,4310,10);
  Motor_Stay=1;
  delay_ms(500);
 }
@@ -46,9 +46,9 @@ void HWalkBack2(void)
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
-	TWO_DIAN_PD(420,-4000,-30);			//335 3170
-	TWO_DIAN_PD(420,-3750,-20);			//335 2370
-	TWO_DIAN_PD(420,-3350,-10);			//335 2370
+	TWO_DIAN_PD(485,-4000,-30);			//335 3170
+	TWO_DIAN_PD(485,-3750,-20);			//335 2370
+	TWO_DIAN_PD(485,-3350,-10);			//335 2370
 		Motor_Stay=1;
 	delay_ms(500);
 }
@@ -57,10 +57,11 @@ void HWalk3(void)
  ZuoBiao_contrary=0;
  Motor_Stay=0;
  
- TWO_DIAN_PD(-420,3350,20);
- TWO_DIAN_PD(-220,3750,15);   //停车要求720
- TWO_DIAN_PD(-70,4150,15);
- TWO_DIAN_PD(-70,4350,0);
+ TWO_DIAN_PD(-485,3350,20);
+ TWO_DIAN_PD(-285,3750,15);   //停车要求720
+ TWO_DIAN_PD(-100,4050,15);
+	TWO_DIAN_PD(-70,4200,15);
+ TWO_DIAN_PD(-70,4350,5);
  Motor_Stay=1;
  delay_ms(500);
 }
@@ -69,9 +70,9 @@ void HWalkBack3(void)
 	SendGetF10=0;
 	ZuoBiao_contrary=1;
 	Motor_Stay=0;
-	TWO_DIAN_PD(70,-4000,-20);			//335 3170
-	TWO_DIAN_PD(70,-3750,-10);			//335 2370
-	TWO_DIAN_PD(100,-3000,-10);			//335 2370
+	TWO_DIAN_PD(70,-4000,-30);			//335 3170
+	TWO_DIAN_PD(70,-3750,-20);			//335 2370
+	TWO_DIAN_PD(120,-3000,-10);			//335 2370
 		Motor_Stay=1;
 	delay_ms(500);
 }
@@ -80,11 +81,11 @@ void HWalk4(void)
  ZuoBiao_contrary=0;
  Motor_Stay=0;
  
- TWO_DIAN_PD(-100,3000,30);
+ TWO_DIAN_PD(-120,3000,30);
  TWO_DIAN_PD(-840,3250,15);   //停车要求720
  TWO_DIAN_PD(-1040,3950,20); 
  TWO_DIAN_PD(-1110,4150,15);
- TWO_DIAN_PD(-1110,4350,0);
+ TWO_DIAN_PD(-1110,4350,5);
  Motor_Stay=1;
  delay_ms(500);
 }
@@ -106,8 +107,8 @@ void HWalk5(void)
  
  TWO_DIAN_PD(-1110,3350,30);
  TWO_DIAN_PD(-1310,3750,20);   //停车要求720
- TWO_DIAN_PD(-1460,4150,15);
- TWO_DIAN_PD(-1460,4350,0);
+ TWO_DIAN_PD(-1410,4150,15);
+ TWO_DIAN_PD(-1410,4370,0);
  Motor_Stay=1;
  delay_ms(500);
 }

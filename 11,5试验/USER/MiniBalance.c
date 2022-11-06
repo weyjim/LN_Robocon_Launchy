@@ -46,19 +46,19 @@ int main(void)
 		HWalkBack1();//取中间球倒车
 		
 		HWalk2();//取右侧第一个球
-		HWalkBack2();//取右侧第一个球倒车
 		SendGetF10=1;
 		while(ReceiveF7==0);
+		HWalkBack2();//取右侧第一个球倒车
 		
 		HWalk3();//取右侧第二个球
-		HWalkBack3();//取右侧第二个球倒车
 		SendGetF10=1;
 		while(ReceiveF7==0);
+		HWalkBack3();//取右侧第二个球倒车
 		
 		HWalk4();//取左侧第一个球
-		HWalkBack4();//取左侧第一个球倒车
 		SendGetF10=1;
 		while(ReceiveF7==0);
+		HWalkBack4();//取左侧第一个球倒车
 		
 		HWalk5();//取左侧第二个球
 		SendGetF10=1;
