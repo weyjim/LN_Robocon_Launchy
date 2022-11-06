@@ -24,18 +24,18 @@ float Balance_Kp=420,Balance_Kd=0.7416,Velocity_Kp=-10,Velocity_Ki=0.75;//PID²ÎÊ
 u16 PID_Parameter[10],Flash_Parameter[10];  //FlashÏà¹ØÊý×é
 
 int main(void)
-  {
-		delay_init();	    	            //=====ÑÓÊ±º¯Êý³õÊ¼»¯
-		uart_init(115200);	            //=====´®¿Ú³õÊ¼»¯Îª
-		JTAG_Set(JTAG_SWD_DISABLE);     //=====¹Ø±ÕJTAG½Ó¿Ú
-		JTAG_Set(SWD_ENABLE);           //=====´ò¿ªSWD½Ó¿Ú ¿ÉÒÔÀûÓÃÖ÷°åµÄSWD½Ó¿Úµ÷ÊÔ
-		TongXinSend_Init();                 //³õÊ¼»¯
-		TongXinReceive_Init();
-		HongLan_Init();
+{
+	delay_init();	    	            //=====ÑÓÊ±º¯Êý³õÊ¼»¯
+	uart_init(115200);	            //=====´®¿Ú³õÊ¼»¯Îª
+	JTAG_Set(JTAG_SWD_DISABLE);     //=====¹Ø±ÕJTAG½Ó¿Ú
+	JTAG_Set(SWD_ENABLE);           //=====´ò¿ªSWD½Ó¿Ú ¿ÉÒÔÀûÓÃÖ÷°åµÄSWD½Ó¿Úµ÷ÊÔ
+	TongXinSend_Init();                 //³õÊ¼»¯
+	TongXinReceive_Init();
+	HongLan_Init();
 	  
 	  KEY_Init();                     //=====°´¼ü³õÊ¼»¯
 		MY_NVIC_PriorityGroupConfig(2);	//=====ÉèÖÃÖÐ¶Ï·Ö×é
-    MiniBalance_PWM_Init(14399,0);   //=====³õÊ¼»¯PWM 10KHZ£¬ÓÃÓÚÇý¶¯µç»ú ÈçÐè³õÊ¼»¯µçµ÷½Ó¿Ú 
+//    MiniBalance_PWM_Init(14399,0);   //=====³õÊ¼»¯PWM 10KHZ£¬ÓÃÓÚÇý¶¯µç»ú ÈçÐè³õÊ¼»¯µçµ÷½Ó¿Ú 
 		usart3_init(115200);               //=====´®¿Ú3³õÊ¼»¯
     Encoder_Init_TIM2();            //=====±àÂëÆ÷½Ó¿Ú
     Encoder_Init_TIM4();            //=====³õÊ¼»¯±àÂëÆ÷2
@@ -45,14 +45,19 @@ int main(void)
     OLED_Init();                    //=====OLED³õÊ¼»¯	    
 	  MiniBalance_EXTI_Init();        //=====MPU6050 5ms¶¨Ê±ÖÐ¶Ï³õÊ¼»¯
 	  	 
-		while(pos_x==0&&pos_y==0)
+//		while(pos_x==0&&pos_y==0)
+//		{
+//			printf("Wait \r\n");
+//		}
+		SendGetF10=1;
+		while(1)
 		{
-			printf("Wait \r\n");
-		}
-    while(1)
-	   {
-		   wey_walk();
-		   while(1);
+			
+//			delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);
+//			delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);
+			
+			while(1);SendGetF10=1;
+		   
 			if(Hong==0)
 			{
 			 
