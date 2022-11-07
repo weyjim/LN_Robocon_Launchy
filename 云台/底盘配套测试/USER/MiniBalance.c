@@ -50,13 +50,16 @@ int main(void)
 //			printf("Wait \r\n");
 //		}
 		SendGetF10=1;
+		Zou=100;
+		
 		while(1)
 		{
 			
 //			delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);
 //			delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);delay_ms(1000);
 			
-			while(1);SendGetF10=1;
+			while(1)
+				SendGetF10=1;
 		   
 			if(Hong==0)
 			{

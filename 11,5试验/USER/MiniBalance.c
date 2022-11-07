@@ -31,9 +31,6 @@ void MAIN_Init(void);
 int main(void)
 {
 	MAIN_Init();
-	GPIO_SetBits(GPIOA,GPIO_Pin_8); 
-	HWalk1();
-	while(1);
 	while(pos_x==0&&pos_y==0)	//等待定位轮初始化
 	{
 		printf("Wait \r\n");
@@ -46,14 +43,14 @@ int main(void)
 		HWalkBack1();//取中间球倒车
 		
 		HWalk2();//取右侧第一个球
+		HWalkBack2();//取右侧第一个球倒车
 		SendGetF10=1;
 		while(ReceiveF7==0);
-		HWalkBack2();//取右侧第一个球倒车
 		
 		HWalk3();//取右侧第二个球
+		HWalkBack3();//取右侧第二个球倒车
 		SendGetF10=1;
 		while(ReceiveF7==0);
-		HWalkBack3();//取右侧第二个球倒车
 		
 		HWalk4();//取左侧第一个球
 		SendGetF10=1;
