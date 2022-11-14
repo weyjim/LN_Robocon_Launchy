@@ -2,7 +2,7 @@
 #define __ACTION_RUNNING_H__
 
 
-void wey_walk(void);
+void Arrived(void);
 
 void HWalk1(void);              //×ßÐÐ·½1
 void HWalk2(void);

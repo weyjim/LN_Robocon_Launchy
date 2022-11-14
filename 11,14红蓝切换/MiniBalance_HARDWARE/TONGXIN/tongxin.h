@@ -23,8 +23,8 @@
 #define SendPutF6 PFout(6)
 #define ReceiveF7 PFin(7)
 
-#define Hong PFin(8)
-#define Lan PFin(9)
+#define Red_Field PFin(8)
+#define Blue_field PFin(9)
 
 
 void TongXinSend_Init(void);//≥ı ºªØ

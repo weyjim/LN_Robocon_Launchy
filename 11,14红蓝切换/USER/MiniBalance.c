@@ -32,77 +32,64 @@ u16 PID_Parameter[10],Flash_Parameter[10];  	//**Flash相关数组
 void MAIN_Init(void);
 
 int main(void)
-{
-	u8 Field;		//场地切换标志位
-	
+{	
 	MAIN_Init();
-	while(pos_x==0&&pos_y==0)	//等待定位轮初始化
-	{
-		printf("Wait \r\n");
-	}
-	
-	Field = Blue;
-	
+//	while(pos_x==0&&pos_y==0)	//等待定位轮初始化
+//	{
+//		printf("Wait \r\n");
+//	}
+		
     while(1)
 	{
-		if(Field==Red)
+		SendGetF10=0;
+		if(Red_Field==0)
 		{
 			HWalk1(); //取中间球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			HWalkBack1();//取中间球倒车
 			
 			HWalk2();//取右侧第一个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			HWalkBack2();//取右侧第一个球倒车
 			
 			HWalk3();//取右侧第二个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			HWalkBack3();//取右侧第二个球倒车
 			
 			HWalk4();//取左侧第一个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			HWalkBack4();//取左侧第一个球倒车
 			
 			HWalk5();//取左侧第二个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			while(1)
 				printf("Finished\n");
 		}
-		else if(Field==Blue)
+		else if(Blue_field==0)
 		{
 			LWalk1(); //取中间球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			LWalkBack1();//取中间球倒车
 			
 			LWalk2();//取右侧第一个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			LWalkBack2();//取右侧第一个球倒车
 			
 			LWalk3();//取右侧第二个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			LWalkBack3();//取右侧第二个球倒车
 			
 			LWalk4();//取左侧第一个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			LWalkBack4();//取左侧第一个球倒车
 			
 			LWalk5();//取左侧第二个球
-			SendGetF10=1;
-			while(ReceiveF7==0);
+			Arrived();
 			while(1)
 				printf("Finished\n");
 		}
-//		else
-//			printf("Waiting Field\n");
+		else
+			printf("Waiting Field\n");
 	}
 	
 }
@@ -124,11 +111,11 @@ void MAIN_Init()
 	MY_NVIC_PriorityGroupConfig(2);	//=====设置中断分组
 	MiniBalance_PWM_Init(14399,0);   //=====初始化PWM 10KHZ，用于驱动电机 如需初始化电调接口 
 	usart3_init(115200);               //=====串口3初始化
-    Encoder_Init_TIM2();            //=====编码器接口
-    Encoder_Init_TIM4();            //=====初始化编码器2
-    IIC_Init();                     //=====IIC初始化
-    MPU6050_initialize();           //=====MPU6050初始化	
-    DMP_Init();                     //=====初始化DMP 
-    OLED_Init();                    //=====OLED初始化	    
+	Encoder_Init_TIM2();            //=====编码器接口
+	Encoder_Init_TIM4();            //=====初始化编码器2
+	IIC_Init();                     //=====IIC初始化
+	MPU6050_initialize();           //=====MPU6050初始化	
+	DMP_Init();                     //=====初始化DMP 
+	OLED_Init();                    //=====OLED初始化	    
 	MiniBalance_EXTI_Init();        //=====MPU6050 5ms定时中断初始化
 }
