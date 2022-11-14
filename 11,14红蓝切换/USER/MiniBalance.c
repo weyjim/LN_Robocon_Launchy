@@ -2,11 +2,10 @@
 #include "sys.h"
 #include "control.h"
 #include "Action_Running.h"
-
   /**************************************************************************
-作者：董广辉①、王恩缘② 王守楠
-VX：17640682245、weyjim  ATS0121
-QQ: 1611860702、772573480 977160820
+作者：董广辉①、王恩缘②
+VX：17640682245、weyjim
+QQ: 1611860702、772573480
 特别鸣谢:平衡小车之家
 **************************************************************************/
 
@@ -27,72 +26,87 @@ float Balance_Kp=420,Balance_Kd=0.7416,Velocity_Kp=0,Velocity_Ki=0.75;	//PID参数
 u16 PID_Parameter[10],Flash_Parameter[10];  	//**Flash相关数组
 //'**'标记为预留标志位定义，本项目未使用
 
+#define Red 1
+#define Blue 2 
+
 void MAIN_Init(void);
 
 int main(void)
 {
+	u8 Field;		//场地切换标志位
+	
 	MAIN_Init();
-	  	 
-
-//    while(1)
-//	{
-//		if(Hong==0)
-//		{
-//		HWalk1(); //取中间球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		HWalkBack1();//取中间球倒车
-//		
-//		HWalk2();//取右侧第一个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		HWalkBack2();//取右侧第一个球倒车
-//		
-//		HWalk3();//取右侧第二个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		HWalkBack3();//取右侧第二个球倒车
-//		
-//		HWalk4();//取左侧第一个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		HWalkBack4();//取左侧第一个球倒车
-//		
-//		HWalk5();//取左侧第二个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//	  }
-//		if(Lan==0)
-//		{
-//		LWalk1(); //取中间球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		LWalkBack1();//取中间球倒车
-//		
-//		LWalk2();//取右侧第一个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		LWalkBack2();//取右侧第一个球倒车
-//		
-//		LWalk3();//取右侧第二个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		LWalkBack3();//取右侧第二个球倒车
-//		
-//		LWalk4();//取左侧第一个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//		LWalkBack4();//取左侧第一个球倒车
-//		
-//		LWalk5();//取左侧第二个球
-//		SendGetF10=1;
-//		while(ReceiveF7==0);
-//	 }
-// }
-
+	while(pos_x==0&&pos_y==0)	//等待定位轮初始化
+	{
+		printf("Wait \r\n");
+	}
+	
+	Field = Blue;
+	
+    while(1)
+	{
+		if(Field==Red)
+		{
+			HWalk1(); //取中间球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			HWalkBack1();//取中间球倒车
+			
+			HWalk2();//取右侧第一个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			HWalkBack2();//取右侧第一个球倒车
+			
+			HWalk3();//取右侧第二个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			HWalkBack3();//取右侧第二个球倒车
+			
+			HWalk4();//取左侧第一个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			HWalkBack4();//取左侧第一个球倒车
+			
+			HWalk5();//取左侧第二个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			while(1)
+				printf("Finished\n");
+		}
+		else if(Field==Blue)
+		{
+			LWalk1(); //取中间球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			LWalkBack1();//取中间球倒车
+			
+			LWalk2();//取右侧第一个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			LWalkBack2();//取右侧第一个球倒车
+			
+			LWalk3();//取右侧第二个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			LWalkBack3();//取右侧第二个球倒车
+			
+			LWalk4();//取左侧第一个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			LWalkBack4();//取左侧第一个球倒车
+			
+			LWalk5();//取左侧第二个球
+			SendGetF10=1;
+			while(ReceiveF7==0);
+			while(1)
+				printf("Finished\n");
+		}
+//		else
+//			printf("Waiting Field\n");
+	}
 	
 }
-	
+
 
 
 
