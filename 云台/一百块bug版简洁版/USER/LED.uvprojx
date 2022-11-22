@@ -408,11 +408,6 @@
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\42bujin\42bujin.c</FilePath>
             </File>
-            <File>
-              <FileName>exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\EXTI\exti.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -508,7 +503,7 @@
   <LayerInfo>
     <Layers>
       <Layer>
-        <LayName>&lt;Project Info&gt;</LayName>
+        <LayName>LED</LayName>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>

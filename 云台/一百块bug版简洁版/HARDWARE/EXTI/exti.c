@@ -46,14 +46,14 @@ void EXTIX_Init(void)
 //外部中断0服务程序 
 void EXTI15_10_IRQHandler(void)
 {
-	if(getball_order==1)	 	 //WK_UP按键
-	{				 
-		printf("11\r\n");
+//	if(getball_order==1)	 	 //WK_UP按键
+//	{				 
+//		printf("11\r\n");
 
 
-		
-	}
-	EXTI_ClearITPendingBit(EXTI_Line14); //清除LINE0上的中断标志位  
+//		
+//	}
+//	EXTI_ClearITPendingBit(EXTI_Line14); //清除LINE0上的中断标志位  
 }
 
 

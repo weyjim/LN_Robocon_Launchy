@@ -28,7 +28,7 @@ void Received_order_init(void)
  
  	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);//使能PORTA,PORTE时钟
 
-	  GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_14|GPIO_Pin_15;//KEY0-KEY1
+	  GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_14;//KEY0-KEY1
 	
 	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD; //设置成下拉输入
 	  GPIO_Init(GPIOB, &GPIO_InitStructure);

@@ -37,69 +37,72 @@ int main()
 //			delay_ms(1000);
 			action_ok = 0;
 			down_num_step (4);
-//			delay_ms(1000);
-//			delay_ms(1000);
-//			delay_ms(1000);
-			if (down_finish == 1)
-			{
+			delay_ms(1000);
+			delay_ms(1000);
+			delay_ms(1000);
+//			if (down_finish == 1)
+//			{
 				close = 1;
 				delay_ms(1000);
 				delay_ms(1000);
-//				delay_ms(500);
-				down_finish  = 0;
-//				down_num_step(4) = 0;
+				delay_ms(500);
+//				down_finish  = 0;
 				close = 0;
-				if(close == 0)
-				{
-					delay_ms(50);
-					up_num_step (8);
+//				if(close == 0)
+//				{
+//					delay_ms(50);
+					up_num_step (4);
 					delay_ms(100);
 //					delay_ms(1000);
 //					delay_ms(1000);
-					
-					if(up_finish == 1)
-					{
-						up_finish  = 0;
-						down_num_step(4);
-						delay_ms(100);
+//					
+//					if(up_finish == 1)
+//					{
 //						up_finish  = 0;
-						if (down_finish  == 1)
-						{
-							
+						down_num_step(4);
+//						delay_ms(100);
+////						up_finish  = 0;
+//						if (down_finish  == 1)
+//						{
+//							
 							open = 1;
 							delay_ms(1000);
 							delay_ms(1000);
-//							delay_ms(1000);
-//							down_finish = 0;
+							delay_ms(1000);
+////							down_finish = 0;
 							open = 0;
-							down_finish  =  0;
-							delay_ms (100);
+//							down_finish  =  0;
+//							delay_ms (100);
 							action_ok  = 1;
 							delay_ms (100);
 							action_ok  = 0;
-						}
-//							if(down_finish == 0)
-//							{
-//								action_ok  = 1;
-//								down_num_step(4);
-//								action_ok  = 0;
-//								delay_ms(100);
-////							delay_ms(1000);
-////							delay_ms(1000);
-////							delay_ms(1000);
-//								if(down_finish  == 1)
-//								{
-////									action_ok  = 1;
-									while(getball_order==1)
-										{
-											delay_ms(50);
-										}
-//									action_ok  = 0;
-										down_finish  = 0;
-							}
 							
-						}
-					}
+							up_num_step (4);
+							delay_ms(100);
+							while(1);
+//						}
+////							if(down_finish == 0)
+////							{
+////								action_ok  = 1;
+////								down_num_step(4);
+////								action_ok  = 0;
+////								delay_ms(100);
+//////							delay_ms(1000);
+//////							delay_ms(1000);
+//////							delay_ms(1000);
+////								if(down_finish  == 1)
+////								{
+//////									action_ok  = 1;
+//									while(getball_order==1)
+//										{
+//											delay_ms(50);
+//										}
+//									action_ok  = 0;
+//										down_finish  = 0;
+//							}
+//							
+//						}
+//					}
 				}
 			}
 

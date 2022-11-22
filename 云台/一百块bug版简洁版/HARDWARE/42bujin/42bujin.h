@@ -6,9 +6,9 @@
 
 
 #define getball_order  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_14)//读取按键0
-#define putball_order  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_15)//读取按键1
+//#define putball_order  GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_15)//读取按键1
 #define close  PBout(11)//底部间位置
-#define middle_state  PBout(6)//中间位置
+//#define middle_state  PBout(6)//中间位置
 #define open  PBout(0)//最高间位置
 #define action_ok PBout(12)//告诉底盘动作完毕
 
